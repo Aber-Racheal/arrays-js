@@ -64,7 +64,21 @@ console.log(arr)
 // "food"If the word is present, return it else return "the search word was not found"
 // let arr5 = ["the", "way", "x", 4];
 
+function searchWord(arr6){
+    arr6 =arr6.map(item => String (item).toLowerCase());
 
+    if(arr6.includes("food")){
+        return"food"
+
+    }
+
+    else{
+        return"the search word was not found";
+    }
+}
+
+let arr5=["the","way","x",4];
+console.log(searchWord(arr5));
 
 
 
